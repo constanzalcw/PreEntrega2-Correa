@@ -176,6 +176,7 @@ img.img-ban:hover {
   }
   .imagenes-banner {
     padding-bottom: 1.5rem;
+    align-self: flex-end;
   }
   .img-ban {
     height: 75px;
@@ -187,10 +188,10 @@ img.img-ban:hover {
 /*Home: sección de horarios y ubicación*/
 
 #horario-y-ubicación {
-  margin: 50px 90px;
+  padding: 3rem;
   display: flex;
   justify-content: space-around;
-  gap: 20px;
+  gap: 3rem;
 }
 
 .mapagps {
@@ -213,7 +214,6 @@ img.img-ban:hover {
 
 .lista-horarios {
   background-color: rgb(237, 237, 237);
-  width: 90%;
   margin-top: 15px;
   padding: 50px;
   flex: 1;
@@ -231,9 +231,7 @@ img.img-ban:hover {
 @media (max-width: 480px) {
   #horario-y-ubicación {
     flex-direction: column;
-    margin: 1rem;
-    margin-top: 2rem;
-    width: 18rem;
+    padding: 2rem 1.5rem;
   }
   h2 {
     margin-bottom: 0%;
@@ -248,25 +246,24 @@ img.img-ban:hover {
     width: 100%;
   }
   .lista-horarios {
-    width: 18rem;
     padding: 1rem;
   }
   .li-hor {
     font-size: 0.7rem;
   }
   .mapagps {
-    height: 200px;
-    width: 280px;
+    height: 250px;
+    width: 100%;
   }
 }
 
 /*Home: sección de contacto y frase*/
 
 #contacto-y-frase {
-  margin: 50px 90px 80px 90px;
+  padding: 3rem;
   display: flex;
   justify-content: space-around;
-  gap: 20px;
+  gap: 3rem;
 }
 
 #contacto-y-frase h2 {
@@ -317,58 +314,81 @@ img.img-ban:hover {
   width: 90%;
 }
 
+.frase-container {
+  flex: 1;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
 fieldset {
   border: none;
 }
 
 .inputs {
   width: 80%;
+  height: 1.5rem;
 }
 
-input {
-  transition: all 2s;       
+.inputs, textarea {
+  margin-top: .5rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: .5rem;
+  transition: outline .15s ease;
 }
 
-input:focus {
-  font-size: 16px;
-  background-color: rgb(237, 237, 237);
+.inputs:focus-visible, textarea:focus-visible {
+  outline: 1px #b6e1fc solid;
+  border: 1px #b6e1fc solid;
 }
 
-textarea {
-  transition: all 2s;       
-}
-
-textarea:focus {
-  font-size: 16px;
-  background-color: rgb(237, 237, 237);
+.button {
+  background-color: rgb(14, 57, 168);
+  border: none;
+  padding: .5rem;
+  border-radius: 5px;
+  color: white;
+  margin-top: 1rem;
 }
 
 @media (max-width: 480px) {
   #contacto-y-frase {
     flex-direction: column;
-    margin: 1rem;
-    margin-top: 2rem;
+    padding: 2rem 1.5rem;
+  }
+
+  #contacto-y-frase > section {
     width: 100%;
   }
-  .frase {
-    width: 100%;
-  }
+
   .form {
     flex-direction: column-reverse;
     margin: 1px;
     margin-top: 0.5rem;
-    width: 100%;
   }
+
   .tag-form {
     font-size: 0.8rem;
   }
+
   .caja-frase {
+    width: 100%;
     flex-direction: row;
     justify-content: center;
   }
+
   .img-frase {
     height: 130px;
     width: 170px;
+  }
+
+  .inputs {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
   }
 }
 
