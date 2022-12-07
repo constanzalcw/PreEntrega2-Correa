@@ -341,15 +341,14 @@ fieldset {
 .pastor-card {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: row; }
+  align-items: center; }
 
 .pastor-info {
-  width: 30%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  width: 30%;
+  flex-direction: column;
   text-align: center; }
 
 .pastor-info h3 {
@@ -369,14 +368,13 @@ fieldset {
 .ministerio-card {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: row; }
+  align-items: center; }
 
 .ministerio-info {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   text-align: center; }
 
 .ministerio-info h3 {
