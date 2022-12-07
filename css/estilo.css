@@ -94,7 +94,7 @@ header {
   }
   .logo {
     height: 30px;
-    width: 75px;
+    width: 60px;
   }
 }
 
@@ -148,6 +148,12 @@ header {
 
 #banner img {
   border-radius: 10px;
+}
+
+.img-ban {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
 }
 
 img.img-ban {
@@ -300,6 +306,12 @@ img.img-ban:hover {
   transition: transform .5s ease;
 }
 
+.img-frase {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
 .cont-img {
   overflow: hidden;
   border-radius: 10px;
@@ -408,18 +420,22 @@ footer {
   flex-direction: row;
 }
 
+.img-social {
+  margin-right: 0.6rem;
+}
+
 @media (max-width: 480px) {
   footer {
     width: 100%;
     padding: 5px;
   }
   .logo-footer {
-    height: 30px;
-    width: 75px;
+    height: 25px;
+    width: 50px;
   }
   .img-social {
-    height: 30px;
-    width: 75px;
+    height: 20px;
+    width: 20px;
   }
 }
 
@@ -576,6 +592,13 @@ header {
 .identidad-info p {
   font-size: 16px;
 }
+
+@media (max-width: 480px) {
+  .identidad-info p {
+    font-size: 0.6rem;
+  }
+}
+
 
 /*Mensajes: sección de mensajes*/
 
