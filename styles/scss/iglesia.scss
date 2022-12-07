@@ -1,0 +1,121 @@
+/*Iglesia: sección de pastores*/
+  
+  #pastores {
+    margin: 50px 90px 80px 90px;
+  }
+  
+  #pastores h2 {
+    margin-bottom: 30px;
+  }
+  
+  .pastor-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .pastor-info {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .pastor-info h3 {
+    margin: 20px 0px 5px 0px;
+  }
+  
+  .pastor-info p {
+    width: 50%;
+    font-size: 16px;
+  }
+  
+  /*Iglesia: sección de ministerios*/
+  
+  #ministerios {
+    margin: 50px 90px 80px 90px;
+  }
+  
+  #ministerios h2 {
+    margin-bottom: 30px;
+  }
+  
+  .ministerio-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .ministerio-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .ministerio-info h3 {
+    margin: 20px 0px 5px 0px;
+  }
+  
+  .ministerio-info p {
+    width: 70%;
+    font-size: 16px;
+  }
+  
+  /*Iglesia: sección de identidad*/
+  
+  #identidad {
+    margin: 50px 90px 80px 90px;
+  }
+  
+  #identidad h2 {
+    margin-bottom: 30px;
+  }
+  
+  .identidad-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .identidad-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    margin: 5px 0px;
+    gap: 30px;
+    width: 70%;
+  }
+  
+  .identidad-info-izq {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+    margin: 5px 0px;
+    gap: 30px;
+    width: 70%;
+  }
+  
+  .identidad-info h3 {
+    margin: 20px 0px 5px 0px;
+  }
+  
+  .identidad-info p {
+    font-size: 16px;
+  }
+  
+  @media (max-width: $mb-breakpoint) {
+    .identidad-info p {
+      font-size: 0.6rem;
+    }
+  }
