@@ -1,11 +1,11 @@
 /*Iglesia: sección de pastores*/
   
   #pastores {
-    margin: 50px 90px 80px 90px;
+    padding: 3em;
   }
   
   #pastores h2 {
-    margin-bottom: 30px;
+    margin-bottom: 1em;
   }
   
   .pastor-card {
@@ -21,22 +21,49 @@
   }
   
   .pastor-info h3 {
-    margin: 20px 0px 5px 0px;
+    margin: 1em 0em 0.2em 0em;
   }
   
   .pastor-info p {
     width: 50%;
-    font-size: 16px;
+    font-size: 1rem;
+  }
+
+  @media (max-width: $mb-breakpoint) {
+    #pastores {
+      padding: 2em;
+    }
+  
+    .pastor-card {
+      @include flex-center;
+
+      flex-direction: column;
+    }
+
+    .pastor-info {
+        width: 100%;
+        padding-bottom: 2em;
+
+        h3 {
+            margin: 1em 0em 0.2em 0em;
+            font-size: 1.3rem;
+        }
+
+        p {
+            width: 80%;
+            font-size: 0.6rem;
+        }
+    }
   }
   
   /*Iglesia: sección de ministerios*/
   
   #ministerios {
-    margin: 50px 90px 80px 90px;
+    padding: 3em;
   }
   
   #ministerios h2 {
-    margin-bottom: 30px;
+    margin-bottom: 1em;
   }
   
   .ministerio-card {
@@ -45,69 +72,124 @@
   
   .ministerio-info {
     @include flex-center;
-    
+
     flex-direction: column;
     text-align: center;
   }
   
   .ministerio-info h3 {
-    margin: 20px 0px 5px 0px;
+    margin: 1em 0em 0.2em 0em;
   }
   
   .ministerio-info p {
     width: 70%;
-    font-size: 16px;
+    font-size: 1rem;
+  }
+
+  @media (max-width: $mb-breakpoint) {
+    #ministerios {
+      padding: 2em;
+    }
+  
+    .ministerio-card {
+      @include flex-center;
+
+      flex-direction: column;
+    }
+
+    .ministerio-info {
+        width: 100%;
+        padding-bottom: 2em;
+
+        h3 {
+            margin: 1em 0em 0.2em 0em;
+            font-size: 1.3rem;
+        }
+
+        p {
+            width: 80%;
+            font-size: 0.6rem;
+        }
+    }
   }
   
   /*Iglesia: sección de identidad*/
   
   #identidad {
-    margin: 50px 90px 80px 90px;
+    padding: 3em;
   }
   
   #identidad h2 {
-    margin-bottom: 30px;
+    margin-bottom: 1em;
   }
   
   .identidad-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
+
     flex-direction: column;
   }
   
   .identidad-info {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+    @include flex-center;
+
     text-align: left;
-    margin: 5px 0px;
+    margin: 0.2em 0em;
     gap: 30px;
     width: 70%;
+
+    img {
+        border-radius: 5px;
+    }
   }
   
   .identidad-info-izq {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+    @include flex-center;
+
     text-align: right;
-    margin: 5px 0px;
+    margin: 0.2em 0em;
     gap: 30px;
     width: 70%;
+
+    img {
+        border-radius: 5px;
+    }
   }
   
   .identidad-info h3 {
-    margin: 20px 0px 5px 0px;
+    margin: 1em 0em 0.2em 0em;
   }
   
   .identidad-info p {
-    font-size: 16px;
+    font-size: 1rem;
   }
-  
+
   @media (max-width: $mb-breakpoint) {
-    .identidad-info p {
-      font-size: 0.6rem;
-    }
+    #identidad {
+        padding: 2em;
+      }
+
+      .identidad-info {
+        padding-bottom: 1em;
+
+        h3 {
+            font-size: 1.3rem;
+          }
+
+        p {
+            font-size: 0.6rem;
+          }
+      }
+
+      .identidad-info-izq {
+        padding-bottom: 1em;
+
+        h3 {
+            font-size: 1.3rem;
+          }
+
+        p {
+            font-size: 0.6rem;
+          }
+      }
+
   }
