@@ -103,7 +103,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b6e1fc; }
+  background: linear-gradient(to bottom, #b6e1fc 50%, transparent 90%); }
 
 #banner h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
