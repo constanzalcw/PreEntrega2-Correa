@@ -91,29 +91,31 @@
                 <section class="form">
                     <form action="">
                         <fieldset>
-                           <div>
-                                <label for="name" class="tag-form">Nombre*</label><br>
-                                <input type="text" name="name" required class="inputs">
+                            <div class="form-floating mb-3">
+                                <input type="name" class="form-control" required class="input" id="floatingInput" placeholder="Nombre">
+                                <label for="floatingInput">Nombre*</label>
                             </div>
                             <br>
-                            <div>
-                                <label for="apellido" class="tag-form">Apellido*</label><br>
-                                <input type="text" name="apellido" required class="inputs">
+                            <div class="form-floating mb-3">
+                                <input type="surname" class="form-control" required class="input" id="floatingInput" placeholder="Apellido">
+                                <label for="floatingInput">Apellido*</label>
                             </div>
                             <br>
-                            <div>
-                                <label for="numero" class="tag-form">Número de teléfono</label><br>
-                                <input type="text" name="numero" class="inputs">
+                            <div class="form-floating mb-3">
+                                <input type="telephone" class="form-control" id="floatingInput" placeholder="Numero">
+                                <label for="floatingInput">Número de teléfono</label>
                             </div>
                             <br>
-                            <div class="inputs-textarea">
-                                <label for="pedidos" class="tag-form">¿Tenés un pedido de oración?</label><br>
-                                <textarea name="pedidos" id="" rows="10"></textarea>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Deja tu pedido" id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">¿Tenés un pedido de oración?</label>
                             </div>
                             <br>
-                            <div>
-                                <input type="checkbox" name="terminos" value="1">
-                                <label for="terminos" class="tag-form">Acepto que se contacten conmigo a través de mi número de teléfono.</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Acepto que se contacten conmigo a través de mi número de teléfono.
+                                </label>
                             </div>
                             <div>
                                 <input type="submit" class="button" value="Enviar datos">
