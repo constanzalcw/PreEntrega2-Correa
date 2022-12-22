@@ -10,11 +10,12 @@
   
   #mensajes h2 {
     margin-bottom: 1em;
+    font-weight: 600;
   }
   
   .mes {
     margin-bottom: 1em;
-    font-size: 25px;
+    font-size: 1.6rem;
   }
   
   .seccion-cards {
@@ -30,7 +31,7 @@
     flex-direction: row;
     align-items: center;
     gap: 15px;
-    border-color: none;
+    --bs-card-border-color: 0;
   }
   
   .card p {

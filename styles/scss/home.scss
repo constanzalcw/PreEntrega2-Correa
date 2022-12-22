@@ -12,6 +12,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     animation-duration: 2s;
     animation-name: aparecer;
+    font-weight: bold;
   }
   
   @keyframes aparecer {
@@ -107,6 +108,7 @@
   
   #horario-y-ubicación h2 {
     margin-bottom: 15px;
+    font-weight: 600;
   }
   
   #horario-y-ubicación p {
@@ -174,6 +176,7 @@
   
   #contacto-y-frase h2 {
     margin-bottom: 15px;
+    font-weight: 600;
   }
   
   #contacto-y-frase > section {
