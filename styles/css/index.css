@@ -11,10 +11,12 @@ body {
 
 /* Estilos generales */
 h1 {
-  font-size: 3rem; }
+  font-size: 3rem;
+  font-weight: 600; }
 
 h2 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: 600; }
 
 h3 {
   font-size: 1.5rem; }
@@ -24,9 +26,11 @@ h4 {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    font-weight: bold; }
   h2 {
-    font-size: 2rem; }
+    font-size: 2rem;
+    font-weight: bold; }
   h3 {
     font-size: 1.5rem; }
   h4 {
@@ -108,7 +112,8 @@ footer {
 #banner h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   animation-duration: 2s;
-  animation-name: aparecer; }
+  animation-name: aparecer;
+  font-weight: bold; }
 
 @keyframes aparecer {
   0% {
@@ -117,7 +122,7 @@ footer {
     opacity: 1; } }
 
 .bajada-titulo {
-  font-size: 25px;
+  font-size: 1.6rem;
   animation-duration: 2s;
   animation-name: aparecer; }
 
@@ -132,7 +137,14 @@ footer {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 #banner img {
   border-radius: 10px; }
@@ -181,7 +193,8 @@ img.img-ban:hover {
   width: 800px; }
 
 #horario-y-ubicación h2 {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  font-weight: 600; }
 
 #horario-y-ubicación p {
   width: 80%; }
@@ -232,7 +245,8 @@ img.img-ban:hover {
   gap: 3rem; }
 
 #contacto-y-frase h2 {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  font-weight: 600; }
 
 #contacto-y-frase > section {
   width: 50%; }
@@ -336,7 +350,8 @@ fieldset {
   padding: 3em; }
 
 #pastores h2 {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-weight: 600; }
 
 .pastor-card {
   display: flex;
@@ -381,7 +396,8 @@ fieldset {
   padding: 3em; }
 
 #ministerios h2 {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-weight: 600; }
 
 .ministerio-card {
   display: flex;
@@ -425,7 +441,8 @@ fieldset {
   padding: 3em; }
 
 #identidad h2 {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-weight: 600; }
 
 .identidad-card {
   display: flex;
@@ -485,11 +502,12 @@ fieldset {
   aspect-ratio: 16 / 9; }
 
 #mensajes h2 {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-weight: 600; }
 
 .mes {
   margin-bottom: 1em;
-  font-size: 25px; }
+  font-size: 1.6rem; }
 
 .seccion-cards {
   display: grid;
@@ -502,7 +520,8 @@ fieldset {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  gap: 15px; }
+  gap: 15px;
+  --bs-card-border-color: 0; }
 
 .card p {
   width: 90%; }
